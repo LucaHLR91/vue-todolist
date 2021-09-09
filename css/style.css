@@ -9,6 +9,7 @@
     width: 70%;
     height: 100vh;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER */
@@ -57,6 +58,21 @@ header {
     background-color: lightgrey;
     box-shadow: 0 5px #666;
     transform: translateY(-4px);
+}
+
+.elenco {
+    margin-top: 20px;
+    background-color: rgb(245, 247, 247);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.elenco li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid grey;
 }
 
 .cross {
