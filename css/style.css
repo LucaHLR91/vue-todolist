@@ -14,14 +14,12 @@
 /* HEADER */
 header {
     width: 100%;
-    height: 70px;
 }
 
 #logo {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
     padding: 20px;
 }
 
@@ -30,6 +28,36 @@ header {
 }
 
 /* MAIN */
+.new-todo {
+    display: flex;
+    justify-content: center;
+}
+
+.new-todo input {
+    width: 200px;
+    margin: 0 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.new-todo button {
+    width: 100px;
+    background-color: lightslategray;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new-todo button:hover {
+    background-color: lightgrey;
+}
+
+.new-todo button:active {
+    background-color: lightgrey;
+    box-shadow: 0 5px #666;
+    transform: translateY(-4px);
+}
 
 .cross {
     cursor: pointer;
