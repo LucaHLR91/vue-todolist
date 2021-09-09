@@ -17,7 +17,7 @@ const app = new Vue(
            ]
         },
         methods: {
-            addToDo() {
+            addToDo() { //credo metodo per aggiugere un nuovo elemento nell'array e per controllare che venga inserito.
                 if (this.newToDo != '') {
                     this.toDoList.push(this.newToDo);
                     this.newToDo = '';
@@ -25,7 +25,7 @@ const app = new Vue(
                     alert('Inserisci un compito')
                 };
             },
-            deleteToDo(index) {
+            deleteToDo(index) { //creo metodo per eliminare un elemento dalla lista
                 console.log(index)
                 this.toDoList.splice(index, 1);
             }

@@ -29,9 +29,9 @@
                 </div>
                 <div class="elenco">
                     <ul v-if="toDoList.length > 0">
-                        <li v-for="(toDo, index) in toDoList">
+                        <!-- <li v-for="(toDo, index) in toDoList"> dal ciclo for mi prendo l'elemento e il suo indice -->
                             {{ toDo }}
-                            <i class="fas fa-times cross" @click="deleteToDo(index)"></i>
+                            <!-- <i class="fas fa-times cross" @click="deleteToDo(index)"></i> utilizzo l'indice per sapere quale il programma deve cancellare -->
                         </li>
                     </ul>
                     <h2 v-else>Non ci sono elementi</h2>
