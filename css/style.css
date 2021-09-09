@@ -30,3 +30,7 @@ header {
 }
 
 /* MAIN */
+
+.cross {
+    cursor: pointer;
+}

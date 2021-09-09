@@ -20,15 +20,17 @@
         <main>
             <div id="root" class="wrapper">
                 <div class="new-todo">
-                    <input type="text" v-model='newToDo' placeholder="NewToDo">
+                    <input type="text" @keyup.enter="addToDo" v-model='newToDo' placeholder="NewToDo">
                     <button @click="addToDo">Aggiungi</button>
                 </div>
                 <div class="elenco">
-                    <ul>
-                        <li v-for="toDo in toDoList">
+                    <ul v-if="toDoList.length > 0">
+                        <li v-for="(toDo, index) in toDoList">
                             {{ toDo }}
+                            <i class="fas fa-times cross" @click="deleteToDo(index)"></i>
                         </li>
                     </ul>
+                    <h2 v-else>Non ci sono elementi</h2>
                 </div>
             </div>
         </main>

@@ -23,7 +23,11 @@ const app = new Vue(
                     this.newToDo = '';
                 } else {
                     alert('Inserisci un compito')
-                }
+                };
+            },
+            deleteToDo(index) {
+                console.log(index)
+                this.toDoList.splice(index, 1);
             }
         }
     }
